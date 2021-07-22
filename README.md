@@ -24,7 +24,7 @@ Step 1] Install all required libraries and dependencies named below using Pip.
 
 Step 2] Download this repo and open a new project with the main file being main.py
 
-Step 3] Download the pretrained weights required for the model from [here](https://github.com/aladdinpersson/Machine-Learning-Collection/releases/tag/1.0)
+Step 3] Download the pretrained weights required for the YoloV3 model from [here](https://github.com/aladdinpersson/Machine-Learning-Collection/releases/tag/1.0)
 
 Step 4] The detect_objects( ) function in main.py acts as an interface to the model,pass the location of your image & weights file to the function & it'll plot back a new image with objects detected.
 
