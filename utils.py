@@ -463,10 +463,16 @@ def plot_image(image, boxes):
     # box[0] is x midpoint, box[2] is width
     # box[1] is y midpoint, box[3] is height
 
+    objects_detected = []
+
     # Create a Rectangle patch
     for box in boxes:
+
         assert len(box) == 6, "box should contain class pred, confidence, x, y, width, height"
         class_pred = box[0]
+
+        objects_detected.append(config.PASCAL_CLASSES[int(class_pred)])
+
         box = box[2:]
         upper_left_x = box[0] - box[2] / 2
         upper_left_y = box[1] - box[3] / 2
@@ -489,6 +495,10 @@ def plot_image(image, boxes):
             bbox={"color": colors[int(class_pred)], "pad": 0},
         )
 
+    if len(objects_detected)>0:
+        print("OBJECTS DETECTED : ", objects_detected)
+    else:
+        print("NO OBJECTS DETECTED")
     plt.show()
 
 
