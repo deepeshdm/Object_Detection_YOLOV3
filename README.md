@@ -5,6 +5,8 @@
 #### This model can detect only the objects listed in the above detection list.
 
 #### DETECTION LIST = ['aeroplane', 'bicycle', 'bird', 'boat', 'bottle','bus', 'car', 'cat', 'chair', 'cow', 'diningtable','dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor']
+
+NOTE : For Real-Time object detection make sure you have a good memory and Gpu on your computer system,a single forward pass takes on average 700-800 MB of memory.On a NVIDIA TITANX GPU this model can detect objects at 40-90 FPS which makes it very suited for Real-Time Object Detction.
                      
                      
 ![](/imgs/model_gif.gif)                     
